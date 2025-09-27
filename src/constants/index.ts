@@ -8,9 +8,9 @@ import type {
 } from "../types";
 
 import {
+  kfc,
   Dashboard,
   Entaga,
-  kfc,
   backend,
  
   web,
@@ -31,9 +31,9 @@ import {
  
   
   
-  jobit,
-  tripguide,
+  
   threejs,
+ 
 } from "../assets";
 
 export const navLinks: TNavLink[] = [
