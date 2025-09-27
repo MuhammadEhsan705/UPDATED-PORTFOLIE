@@ -8,8 +8,6 @@ import { fadeIn } from "../../utils/motion";
 import { config } from "../../constants/config";
 import { Header } from "../atoms/Header";
 import { TProject } from "../../types";
-import Button from "../btns"
-
 
 const ProjectCard: React.FC<{ index: number } & TProject> = ({
   index,
@@ -18,6 +16,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
   tags,
   image,
   sourceCodeLink,
+  liveDemoLink,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -29,6 +28,7 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
         glareColor="#aaa6c3"
       >
         <div className="bg-tertiary w-full rounded-2xl p-5 sm:w-[300px]">
+          {/* Project Image */}
           <div className="relative h-[230px] w-full">
             <img
               src={image}
@@ -48,10 +48,14 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </div>
             </div>
           </div>
+
+          {/* Project Info */}
           <div className="mt-5">
             <h3 className="text-[24px] font-bold text-white">{name}</h3>
             <p className="text-secondary mt-2 text-[14px]">{description}</p>
           </div>
+
+          {/* Tags */}
           <div className="mt-4 flex flex-wrap gap-2">
             {tags.map((tag) => (
               <p key={tag.name} className={`text-[14px] ${tag.color}`}>
@@ -59,6 +63,20 @@ const ProjectCard: React.FC<{ index: number } & TProject> = ({
               </p>
             ))}
           </div>
+
+          {/* Live Demo Button */}
+          {liveDemoLink && (
+            <div className="mt-5">
+              <a
+                href={liveDemoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-md bg-gradient-to-r from-purple-500 to-indigo-500 px-6 py-3 text-sm font-bold text-white shadow-lg hover:scale-105 hover:shadow-xl transition"
+              >
+                Live Demos →
+              </a>
+            </div>
+          )}
         </div>
       </Tilt>
     </motion.div>
@@ -79,11 +97,15 @@ const Works = () => {
         </motion.p>
       </div>
 
+      {/* Mapping Projects */}
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
-        ))} 
-        <Button/>
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
+        ))}
       </div>
     </>
   );

@@ -123,6 +123,7 @@ const projects: TProject[] = [
     ],
     image: kfc,
     sourceCodeLink: "https://github.com/MuhammadEhsan705/kfc3",
+    liveDemoLink: "https://kfc-clone.vercel.app",
   },
   {
     name: "Dashboard",
@@ -135,6 +136,7 @@ const projects: TProject[] = [
     ],
     image: Dashboard,
     sourceCodeLink: "https://github.com/MuhammadEhsan705/DASHBOARD-project",
+    liveDemoLink: "https://kfc-clone.vercel.app",
   },
   {
     name: "Enatega Clone",
@@ -147,6 +149,7 @@ const projects: TProject[] = [
     ],
     image: entaga,
     sourceCodeLink: "https://github.com/",
+    liveDemoLink: "https://kfc-clone.vercel.app",
     
   },
 ];
