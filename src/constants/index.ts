@@ -127,7 +127,7 @@ const projects: TProject[] = [
   {
     name: "Dashboard",
     description:
-      "A dashboard application with full CRUD (Create, Read, Update, Delete) functionality, including adding, viewing, editing, and deleting records in real time.",
+      "A dashboard application with full CRUD (Create, Read, Update, Delete) functionality. Users must sign up / sign in to access the dashboard; authentication is handled with Supabase for secure session management and role-based access control.",
     tags: [
       { name: "react", color: "blue-text-gradient" },
       { name: "tailwind CSS", color: "pink-text-gradient" },
@@ -147,6 +147,7 @@ const projects: TProject[] = [
     ],
     image: entaga,
     sourceCodeLink: "https://github.com/",
+    
   },
 ];
 

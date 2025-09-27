@@ -24,11 +24,11 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+// ✅ Your new project assets
+import kfc from "./kfc.jpg";
+import Dashboard from "./Dashboard.png";
+import entaga from "./Entaga.png";
 
 export {
   logo,
@@ -55,8 +55,7 @@ export {
   meta,
   shopify,
   starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  kfc,
+  Dashboard,
+  entaga,
 };
