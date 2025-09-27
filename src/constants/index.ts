@@ -8,9 +8,11 @@ import type {
 } from "../types";
 
 import {
-  mobile,
+  Dashboard,
+  Entaga,
+  kfc,
   backend,
-  creator,
+ 
   web,
   javascript,
   typescript,
@@ -24,11 +26,11 @@ import {
   git,
   figma,
   docker,
-  meta,
+
   starbucks,
-  tesla,
-  shopify,
-  carrent,
+ 
+  
+  
   jobit,
   tripguide,
   threejs,
@@ -54,18 +56,12 @@ const services: TService[] = [
     title: "Web Developer",
     icon: web,
   },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
+  
   {
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  
 ];
 
 const technologies: TTechnology[] = [
@@ -125,11 +121,23 @@ const technologies: TTechnology[] = [
 
 const experiences: TExperience[] = [
   {
+    title: "HTML CSS & javaScript",
+    companyName: "Starbucks",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "November 2024 - April 2025",
+    points: [
+      "I started learning front-end development (HTML, CSS, JavaScript) and used my new skills to build two full-page clones: a KFC site and a ronin.pk site. Each clone recreates the original site's layout and styling, with responsive design for mobile and desktop, semantic HTML structure, CSS for layout and visuals, and JavaScript for interactive elements (menus, sliders, and basic form handling). These projects helped me understand responsive layouts, DOM manipulation, and best practices in front-end development.",
+      
+    ],
+  },
+  
+  {
     title: "React.js Developer",
     companyName: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "july 2025 - Sep 2025",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -137,51 +145,15 @@ const experiences: TExperience[] = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "React Native Developer",
-    companyName: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    companyName: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    companyName: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
+  
+ 
 ];
 
 const testimonials: TTestimonial[] = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Ehsan proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -189,7 +161,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Ehsan does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -197,7 +169,7 @@ const testimonials: TTestimonial[] = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "After Ehsan optimized our website, our traffic increased by 50%. We can't thank them enough!",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
@@ -207,54 +179,52 @@ const testimonials: TTestimonial[] = [
 
 const projects: TProject[] = [
   {
-    name: "Car Rent",
+    name: "KFC CLONE",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    "A KFC clone website built with modern web technologies, featuring a responsive design, menu showcase, ordering system, and an easy-to-use interface. It replicates the look and feel of the KFC website while practicing front-end development skills",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      
+      {
+        name: "tailwind CSS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: kfc,
+    sourceCodeLink: "https://github.com/MuhammadEhsan705/kfc3",
+  },
+  {
+    name: "Dashboard",
+    description:
+      "A dashboard application with full CRUD (Create, Read, Update, Delete) functionality. It allows users to manage data efficiently through an interactive interface, including features like adding new records, viewing details, editing existing entries, and deleting records in real time.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
+      
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
-    ],
-    image: carrent,
-    sourceCodeLink: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
+        name: "supabase",
         color: "green-text-gradient",
       },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
     ],
-    image: jobit,
-    sourceCodeLink: "https://github.com/",
+    image: Dashboard,
+    sourceCodeLink: "https://github.com/MuhammadEhsan705/DASHBOARD-project",
   },
   {
-    name: "Trip Guide",
+    name: "Enatega Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "The Enatega website clone includes a Call Schedule feature that allows users to easily book a meeting or demo at their preferred time. It provides a simple and user-friendly way to connect with the team for consultations or project discussions.",
     tags: [
       {
-        name: "nextjs",
+        name: "React js",
         color: "blue-text-gradient",
       },
       {
@@ -262,11 +232,11 @@ const projects: TProject[] = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "tailwind CSS",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: Entaga,
     sourceCodeLink: "https://github.com/",
   },
 ];
