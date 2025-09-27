@@ -123,7 +123,7 @@ const projects: TProject[] = [
     ],
     image: kfc,
     sourceCodeLink: "https://github.com/MuhammadEhsan705/kfc3",
-    liveDemoLink: "https://kfc-clone.vercel.app",
+    liveDemoLink: "https://aesthetic-basbousa-e9a6fb.netlify.app/",
   },
   {
     name: "Dashboard",
@@ -136,7 +136,7 @@ const projects: TProject[] = [
     ],
     image: Dashboard,
     sourceCodeLink: "https://github.com/MuhammadEhsan705/DASHBOARD-project",
-    liveDemoLink: "https://kfc-clone.vercel.app",
+    liveDemoLink: "https://classy-kashata-d17d5a.netlify.app/",
   },
   {
     name: "Enatega Clone",
@@ -149,7 +149,7 @@ const projects: TProject[] = [
     ],
     image: entaga,
     sourceCodeLink: "https://github.com/",
-    liveDemoLink: "https://kfc-clone.vercel.app",
+    liveDemoLink: "https://helpful-muffin-fc1d3c.netlify.app/",
     
   },
 ];
