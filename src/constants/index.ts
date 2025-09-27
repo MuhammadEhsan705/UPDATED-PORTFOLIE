@@ -148,7 +148,7 @@ const projects: TProject[] = [
       { name: "tailwind CSS", color: "pink-text-gradient" },
     ],
     image: entaga,
-    sourceCodeLink: "https://github.com/",
+    sourceCodeLink: "https://github.com/MuhammadEhsan705/Entaga-Clone",
     liveDemoLink: "https://helpful-muffin-fc1d3c.netlify.app/",
     
   },
