@@ -10,6 +10,7 @@ import type {
 import kfc from "../assets/kfc.jpg";
 import Dashboard from "../assets/Dashboard.png";
 import entaga from "../assets/Entaga.png";
+import resturent from "../assets/resturent.png";
 
 import {
   backend,
@@ -83,6 +84,22 @@ const experiences: TExperience[] = [
       "Participating in code reviews and providing constructive feedback.",
     ],
   },
+  {
+    title: "Full Stack Developer (Restaurant Management System)",
+    companyName: "Self Project",
+    icon: starbucks,
+    iconBg: "#383E56",
+    date: "November 2025 - Present",
+    points: [
+      "Developed a full-stack restaurant management system using React.js, Node.js, Express.js, and MongoDB Atlas.",
+      "Designed and implemented RESTful APIs for menu management, category handling, order processing, and booking system.",
+      "Built a secure admin dashboard to add, update, and delete menu items and categories, and manage order status in real-time.",
+      "Implemented authentication and authorization for admin and users using JWT and cookies.",
+      "Integrated frontend with backend APIs using Axios and handled state management for smooth user experience.",
+      "Ensured responsive UI design with Tailwind CSS and cross-browser compatibility.",
+      "Managed database operations including CRUD functionality and optimized queries using MongoDB.",
+    ],
+  }
 ];
 
 const testimonials: TTestimonial[] = [
@@ -165,7 +182,7 @@ const projects: TProject[] = [
       { name: "Tailwind CSS", color: "blue-text-gradient" },
     ],
   
-    image: entaga,
+    image: resturent ,
   
     sourceCodeLink: "https://github.com/MuhammadEhsan705/internship-Project",
   

@@ -46,7 +46,7 @@ export const config: TConfig = {
   },
   hero: {
     name: "Muhammad Ehsan",
-    p: ["I develop 3D visuals, user", "interfaces and web applications"],
+    p: [""],
   },
   contact: {
     p: "Get in touch",
@@ -67,9 +67,9 @@ export const config: TConfig = {
     about: {
       p: "Introduction",
       h2: "Overview.",
-      content: `I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
+      content: `I'm a skilled software developer with experience in
+      JavaScript, and expertise in frameworks like React, Node.js
+      . I'm a quick learner and collaborate closely with clients to
       create efficient, scalable, and user-friendly solutions that solve
       real-world problems. Let's work together to bring your ideas to life!`,
     },
