@@ -1,7 +1,7 @@
 // @ts-nocheck
 import {
-  EarthCanvas,
-  BallCanvas,
+
+  
   ComputersCanvas,
   StarsCanvas,
 } from "./canvas";
@@ -25,8 +25,7 @@ export {
   Feedbacks,
   Contact,
   CanvasLoader,
-  EarthCanvas,
-  BallCanvas,
+ 
   ComputersCanvas,
   StarsCanvas,
 };
