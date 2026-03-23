@@ -152,6 +152,25 @@ const projects: TProject[] = [
     liveDemoLink: "https://helpful-muffin-fc1d3c.netlify.app/",
     
   },
+  {
+    name: "Restaurant Full Stack Web App",
+    description:
+      "A complete full-stack restaurant web application inspired . It allows users to browse menu items, place orders, and schedule bookings. The platform includes a powerful admin dashboard to manage menu categories, add/update/delete food items, track orders, update order status, and handle bookings. Built using modern technologies including MongoDB Atlas, Express.js, React.js, and Node.js for a scalable and responsive experience.",
+    
+    tags: [
+      { name: "React js", color: "blue-text-gradient" },
+      { name: "Node js", color: "green-text-gradient" },
+      { name: "Express js", color: "pink-text-gradient" },
+      { name: "MongoDB Atlas", color: "orange-text-gradient" },
+      { name: "Tailwind CSS", color: "blue-text-gradient" },
+    ],
+  
+    image: entaga,
+  
+    sourceCodeLink: "https://github.com/MuhammadEhsan705/internship-Project",
+  
+    liveDemoLink: "https://internship-project-d7ho.vercel.app/",
+  }
 ];
 
 export { services, technologies, experiences, testimonials, projects };
