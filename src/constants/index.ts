@@ -178,7 +178,7 @@ const projects: TProject[] = [
   {
     name: "Restaurant Full Stack Web App",
     description:
-      "A complete full-stack restaurant web application inspired . It allows users to browse menu items, place orders, and schedule bookings. The platform includes a powerful admin dashboard to manage menu categories, add/update/delete food items, track orders, update order status, and handle bookings. Built using modern technologies including MongoDB Atlas, Express.js, React.js, and Node.js for a scalable and responsive experience. ADMIN EMAIL OR PASSWORD:ehsanali103@gmail.com   pass:admin123",
+      "A complete full-stack restaurant web application inspired . It allows users to browse menu items, place orders, and schedule bookings. The platform includes a powerful admin dashboard to manage menu categories, add/update/delete food items, track orders, update order status, and handle bookings. Built using modern technologies including MongoDB Atlas, Express.js, React.js, and Node.js for a scalable and responsive experience. ADMIN EMAIL OR PASSWORD:ehsanali103@gmail.com  pass:admin123",
     
     tags: [
       { name: "React js", color: "blue-text-gradient" },
