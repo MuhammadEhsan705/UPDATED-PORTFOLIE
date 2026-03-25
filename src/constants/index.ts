@@ -35,6 +35,12 @@ export const navLinks: TNavLink[] = [
   { id: "about", title: "About" },
   { id: "work", title: "Work" },
   { id: "contact", title: "Contact" },
+  {
+    id: "linkedin",
+    title: "LinkedIn",
+    external: true,
+    url: "https://www.linkedin.com/in/muhammad-ehsan-542810284",
+  },
 ];
 
 const services: TService[] = [

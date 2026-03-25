@@ -50,9 +50,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        styles.paddingX
-      } fixed top-0 z-20 flex w-full items-center py-5 ${
+      className={`${styles.paddingX} fixed top-0 z-20 flex w-full items-center py-5 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -70,6 +68,7 @@ const Navbar = () => {
           </p>
         </Link>
 
+        {/* DESKTOP MENU */}
         <ul className="hidden list-none flex-row gap-10 sm:flex">
           {navLinks.map((nav) => (
             <li
@@ -78,11 +77,22 @@ const Navbar = () => {
                 active === nav.id ? "text-white" : "text-secondary"
               } cursor-pointer text-[18px] font-medium hover:text-white`}
             >
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              {nav.external ? (
+                <a
+                  href={nav.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {nav.title}
+                </a>
+              ) : (
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              )}
             </li>
           ))}
         </ul>
 
+        {/* MOBILE MENU */}
         <div className="flex flex-1 items-center justify-end sm:hidden">
           <img
             src={toggle ? close : menu}
@@ -103,16 +113,25 @@ const Navbar = () => {
                   className={`font-poppins cursor-pointer text-[16px] font-medium ${
                     active === nav.id ? "text-white" : "text-secondary"
                   }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
+                  onClick={() => setToggle(false)}
                 >
-                  <a href={`#${nav.id}`}>{nav.title}</a>
+                  {nav.external ? (
+                    <a
+                      href={nav.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {nav.title}
+                    </a>
+                  ) : (
+                    <a href={`#${nav.id}`}>{nav.title}</a>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
         </div>
+
       </div>
     </nav>
   );
