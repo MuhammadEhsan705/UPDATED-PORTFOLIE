@@ -38,7 +38,7 @@ export const navLinks: TNavLink[] = [
   {
     id: "linkedin",
     title: "LinkedIn",
-    external: true,
+    external:true,
     url: "https://www.linkedin.com/in/muhammad-ehsan-542810284",
   },
 ];

@@ -33,6 +33,8 @@ export type TTechnology = Required<Omit<TCommonProps, "title">>;
 
 export type TNavLink = {
   id: string;
+  external: true;
+url: "https://..."
 } & Required<Pick<TCommonProps, "title">>;
 
 export type TService = Required<Omit<TCommonProps, "name">>;
